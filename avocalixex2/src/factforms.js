@@ -4,14 +4,19 @@ import React, { Component } from 'react';
 
     constructor(props) {
       super(props);
-      this.state = {value: 0};
+      this.state = {value: 0,
+                    TVA:0,
+                    Total:0
+        };
   
-      //this.handleChange = this.handleChange.bind(this);
+      this.handleChange = this.handleChange.bind(this);
       //this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
       this.setState({value: event.target.value});
+      this.setState({TVA: event.target.value*0.2});
+      this.setState({Total: event.target.value*1.2});
     }
   
 
@@ -33,10 +38,10 @@ import React, { Component } from 'react';
         <input type="text" id="montant" name="Montant"placeholder="Montant de la préstation" onChange={this.handleChange}/>
 
         <label>Valeur de TVA</label>
-        <input type="text"id="fname"name="firstname"placeholder="Valeur TVA" value={this.state.value*0.2}/>
+        <input type="text"id="fname"name="firstname"placeholder="Valeur TVA" value={this.state.TVA}/>
         
         <label>Total</label>
-        <input type="text"id="fname"name="firstname"placeholder="Total"/>
+        <input type="text"id="fname"name="firstname"placeholder="Total" value={this.state.Total}/>
         
         
         
