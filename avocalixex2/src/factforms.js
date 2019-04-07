@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
     constructor(props) {
       super(props);
-      this.state = {value: ''};
+      this.state = {value: 0};
   
       //this.handleChange = this.handleChange.bind(this);
       //this.handleSubmit = this.handleSubmit.bind(this);
