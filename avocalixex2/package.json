@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-popupbox": "^2.0.8",
+    "react-scripts": "2.1.8",
+    "react-simplert": "0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
